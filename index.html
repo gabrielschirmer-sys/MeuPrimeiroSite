@@ -18,6 +18,16 @@
         <img src="https://www.viator.com/pt-BR/Seoul-attractions/Namsan-Tower-N-Seoul-Tower/d973-a4959"
         alt="A foto se trata de uma Torre chamada Nansam, que localiza-se na Coreia do Sul, em Seul"
         <button>❤️<span>0</span></button>
-    </main>
+       </main>
     </body>
+    <script>
+        const botoes = document.querySelectorALL("button");
+        botoes.forEach(function(botao){
+            botao.addEventListener("click", botaoclicado);
+            function botaoclicado(){
+                let texto = botao.querySelector("span");
+                texto.textoContent++;
+            }
+        })
+    </script>
     </html>
